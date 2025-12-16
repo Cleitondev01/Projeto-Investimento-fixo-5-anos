@@ -187,6 +187,12 @@ Cumpre as regras do CDI 120%? → Melhor opção
 
 Quer simplicidade e segurança? → Tesouro Selic
 
+## 📊 Dashboard Interativo (Power BI)
+
+🔗 Acesse o dashboard completo:  
+https://app.powerbi.com/view?r=eyJrIjoiMTZhNzI0ZWYtYmM1Mi00MzIxLWFiMWEtZWJiZmQyMjlmNzQyIiwidCI6IjFkMDkwYmUwLTEyYjctNGJhNi05M2E0LTQzZmM0NWExNzk2NSJ9
+
+
 📎 Contatos
 
 LinkedIn: https://www.linkedin.com/in/cleiton-silveira21/
@@ -194,3 +200,5 @@ LinkedIn: https://www.linkedin.com/in/cleiton-silveira21/
 GitHub do Projeto: https://github.com/Cleitondev01/Projeto-Investimento-fixo-5-anos
 
 Portfólio: https://cleitonsilveira-portfolio.lovable.app/
+
+Medium: https://medium.com/@cleitonsilvasilveira67/investimento-fixo-anual-qual-investimento-%C3%A9-mais-vantajoso-ce1f55e0f893?postPublishedType=repub
