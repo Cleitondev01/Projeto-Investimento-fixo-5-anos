@@ -1,154 +1,150 @@
-📊 Projeto – Análise de Investimentos em Renda Fixa (5 Anos)
-<img width="640" height="359" alt="image" src="https://github.com/user-attachments/assets/32222102-4991-42e7-9951-6be21d51aef0" />
+# 📊 Projeto – Análise de Investimentos em Renda Fixa (5 Anos)
+<img width="638" height="355" alt="image" src="https://github.com/user-attachments/assets/8551358f-ed63-4c13-9c01-b0bee8c93b4e" />
 
 Recentemente, em uma conversa com alguns amigos sobre investimentos, surgiu uma pergunta que dividiu opiniões:
 
-Qual investimento é o melhor a longo prazo?
+> **Qual investimento é o melhor a longo prazo?**
 
 As respostas vieram cheias de achismos, informações falsas ou desatualizadas, e nenhuma conclusão concreta foi alcançada. Isso despertou algumas dúvidas importantes:
 
-Qual investimento rende mais ao longo dos anos?
+- Qual investimento rende mais ao longo dos anos?
+- Onde devo investir meu dinheiro?
+- Vale a pena correr mais risco ou investir em algo mais seguro?
+- No Brasil, como o Imposto de Renda impacta esses investimentos?
 
-Onde devo investir meu dinheiro?
+Com base nessas perguntas, decidi criar este projeto utilizando **Python + Power BI** para analisar dados reais e trazer respostas mais objetivas.
 
-Vale a pena correr mais risco ou investir em algo mais seguro?
+---
 
-No Brasil, como o Imposto de Renda impacta esses investimentos?
-
-Com base nessas perguntas, decidi criar este projeto utilizando Python + Power BI para analisar dados reais e trazer respostas mais objetivas.
-
-📌 O que é investimento de renda fixa?
+## 📌 O que é investimento de renda fixa?
 
 Segundo o Gemini, investimentos de renda fixa são aqueles em que você sabe (ou tem uma fórmula para saber) quanto irá receber no futuro no momento da aplicação.
 
 Basicamente, você está:
+- Emprestando dinheiro para o Governo (Tesouro)
+- Ou para bancos/empresas (CDB, LCI, LCA, etc.)
 
-Emprestando dinheiro para o Governo (Tesouro)
+---
 
-Ou para bancos/empresas (CDB, LCI, LCA, etc.)
+## 💰 Investimentos Analisados
 
-💰 Investimentos Analisados
-1️⃣ Tesouro Selic
+### 1️⃣ Tesouro Selic
 
-Como funciona:
+**Como funciona:**  
 Você empresta dinheiro ao Governo Federal, que remunera pela Taxa Selic.
 
-Rentabilidade típica: 100% da Selic (próximo ao CDI)
+- Rentabilidade típica: 100% da Selic (próximo ao CDI)
+- Risco: Extremamente baixo (benchmark de segurança do país)
 
-Risco: Extremamente baixo (benchmark de segurança do país)
+---
 
-2️⃣ Investimentos Bancários (CDB, LCI/LCA)
-CDB – Certificado de Depósito Bancário
+### 2️⃣ Investimentos Bancários (CDB, LCI/LCA)
 
-O que é: Título emitido por bancos para captação de recursos
+#### CDB – Certificado de Depósito Bancário
 
-Rentabilidade típica: 100% a 120% do CDI
+- O que é: Título emitido por bancos para captação de recursos
+- Rentabilidade típica: 100% a 120% do CDI
+- IR: Incide Imposto de Renda
 
-IR: Incide Imposto de Renda
+#### LCI / LCA
 
-LCI / LCA
+- O que é: Títulos para financiar os setores imobiliário e agrícola
+- Rentabilidade típica: 90% a 95% do CDI
+- IR: Isento
 
-O que é: Títulos para financiar setores imobiliário e agrícola
+**Risco Principal:**  
+Risco de crédito (quebra do banco).  
+Todos contam com garantia do FGC até R$ 250 mil por CPF e por instituição.
 
-Rentabilidade típica: 90% a 95% do CDI
+---
 
-IR: Isento
+### 3️⃣ Bancos Digitais e “Caixinhas”
 
-📌 Risco Principal:
-Risco de crédito (quebra do banco).
-➡️ Todos contam com FGC até R$ 250 mil por CPF e instituição.
+#### Caixinhas (Nubank, etc.)
 
-3️⃣ Bancos Digitais e “Caixinhas”
-Caixinhas (Nubank, etc.)
+- Fundos DI simples
+- Investem em Tesouro Selic ou CDBs
+- Rentabilidade típica: ~100% do CDI
+- Não possuem FGC (são fundos), mas o risco é baixo
 
-Geralmente fundos DI simples
+#### Rendimento em Conta (Mercado Pago, 99Pay, etc.)
 
-Investem em Tesouro Selic ou CDBs
+- Normalmente CDB de liquidez diária
+- Rentabilidade varia (ex: Mercado Pago paga 100% do CDI após 30 dias)
+- Possuem FGC quando o CDB está no seu CPF
 
-Rentabilidade: ~100% do CDI
+---
 
-FGC: Não possui (é fundo), mas o risco é baixo
+### 4️⃣ Comparação de Rendimento Mensal (Foco no CDI)
 
-Rendimento em Conta (Mercado Pago, 99Pay, etc.)
-
-Normalmente CDB de liquidez diária
-
-Rentabilidade: Varia (ex: Mercado Pago paga 100% do CDI após 30 dias)
-
-FGC: Sim, quando o CDB está no seu CPF
-
-4️⃣ Comparação de Rendimento Mensal (Foco no CDI)
-
-Investimentos de liquidez diária tendem a ter rentabilidade bruta muito parecida, pois seguem o CDI diário.
+Os investimentos de liquidez diária tendem a ter rentabilidade bruta muito parecida, pois seguem o CDI diário.
 
 As diferenças estão em:
+- Carência
+- Incidência de IR
+- Regras específicas de cada banco
 
-Carência
+Por isso, foi considerado CDI = 100% como padrão.
 
-Incidência de IR
+---
 
-Regras específicas de cada banco
+## 📅 Período Analisado
 
-➡️ Por isso, foi considerado CDI = 100% como padrão.
+- 01/01/2020 até 05/12/2025  
+- Aproximadamente 5 anos
 
-📅 Período Analisado
+---
 
-01/01/2020 até 05/12/2025
+## ⚙️ Premissas do Projeto
 
-Aproximadamente 5 anos
+- CDI considerado sempre em 100%
+- CDI 120% analisado como cenário adicional
+- Alíquota de IR: 15% (prazo acima de 5 anos)
+- LCI/LCA: 90% do CDI e isento de IR
+- Dados reais do Banco Central do Brasil
 
-⚙️ Premissas do Projeto
+---
 
-CDI considerado sempre em 100%
-
-CDI 120% analisado como cenário adicional
-
-Alíquota de IR: 15% (prazo acima de 5 anos)
-
-LCI/LCA: 90% do CDI e isento de IR
-
-Dados reais do Banco Central do Brasil
-
-🐍 Python – Engenharia de Dados
+## 🐍 Python – Engenharia de Dados
 
 O Python foi responsável por toda a parte de engenharia e simulação financeira.
 
-Principais etapas:
+### Principais etapas:
 
-📥 Busca de dados reais:
-Utilização da biblioteca bcb para coletar CDI e Selic diários diretamente do Banco Central.
+- **Busca de dados reais:**  
+  Utilização da biblioteca `bcb` para coletar CDI e Selic diários diretamente do Banco Central.
 
-📈 Simulação financeira:
-Aplicação da lógica de rentabilidade diária para:
+- **Simulação financeira:**  
+  Aplicação da lógica de rentabilidade diária para Tesouro Selic, CDB e LCI/LCA, incluindo o desconto de IR (15% sobre o lucro).
 
-Tesouro Selic
+- **Modelagem de tempo:**  
+  Criação de uma Tabela Calendário limpa para viabilizar os cálculos no Power BI via DAX.
 
-CDB
+> Observação: este projeto representa um recorte de um código maior.
 
-LCI/LCA
-Incluindo desconto de IR (15% sobre o lucro).
+---
 
-📆 Modelagem de tempo:
-Criação de uma Tabela Calendário limpa, utilizada posteriormente no Power BI para cálculos em DAX.
+## 📊 Power BI – Visualização e Análise
 
-⚠️ Observação: este projeto representa um recorte de um código maior.
+### Etapas realizadas:
 
-📊 Power BI – Visualização e Análise
-Etapas no Power BI:
+- Importação da tabela calendário (CSV gerada no Python)
+- Criação das medidas em DAX
+- Construção dos gráficos e layout final
+- Design das imagens feito no Figma
 
-Importação da tabela calendário (CSV gerada no Python)
+---
 
-Criação das medidas em DAX
+## 🧮 Principais Medidas DAX (Exemplo)
 
-Construção dos gráficos e layout final
-
-Design das imagens realizado no Figma
-
-🧮 Principais Medidas DAX (Exemplo)
-Lucro_TS_LIQUIDO = 
+```DAX
+Lucro_TS_LIQUIDO =
 MAX(analise_renda_fixa_5_anos[Saldo_Liquido_TS]) - 1000
 
-%YoY TS = 
+Lucro_TS_BRUTO =
+MAX(analise_renda_fixa_5_anos[Saldo_Liquido_TS])
+
+%YoY TS =
 VAR AnoAnterior =
     CALCULATE(
         [Lucro_TS_LIQUIDO],
@@ -161,35 +157,31 @@ IF(
     BLANK(),
     DIVIDE(AnoAtual - AnoAnterior, AnoAnterior)
 )
-
-
+```
 As medidas foram replicadas para cada tipo de investimento.
-
 📌 Resultados Finais (Lucro Líquido)
 
-Todos os valores já com desconto de 15% de IR
+Todos os valores abaixo já consideram o desconto de 15% de IR.
 
 Investimento	Lucro Líquido
-🥇 CDI 120%	R$ 1.327,06
-🥈 Tesouro Selic	R$ 1.025,38
-🥉 LCI	R$ 1.024,69
+CDI 120%	R$ 1.327,06
+Tesouro Selic	R$ 1.025,38
+LCI	R$ 1.024,69
 CDI 100%	R$ 1.011,27
-🧠 Conclusões
 
-CDI 120% foi o melhor investimento no cenário analisado
-⚠️ Porém, geralmente exige condições específicas (aporte mensal, regras do banco, etc.)
+🧠 Conclusões
+O CDI 120% foi o melhor investimento no cenário analisado
+Porém, normalmente exige condições específicas (aporte mensal, regras do banco, etc.)
 
 Desconsiderando o CDI 120%:
-
 Tesouro Selic e LCI apresentaram resultados praticamente idênticos
 
 Tesouro Selic se destaca pela segurança máxima
 
 LCI se destaca pela isenção de IR
 
-✅ Qual é o melhor investimento?
-
-👉 Depende do seu perfil e das condições disponíveis
+Conclusão final:
+O melhor investimento depende do seu perfil e das condições disponíveis.
 
 Cumpre as regras do CDI 120%? → Melhor opção
 
@@ -197,11 +189,8 @@ Quer simplicidade e segurança? → Tesouro Selic
 
 📎 Contatos
 
-🔗 LinkedIn:
-https://www.linkedin.com/in/cleiton-silveira21/
+LinkedIn: https://www.linkedin.com/in/cleiton-silveira21/
 
-💻 GitHub do Projeto:
-https://github.com/Cleitondev01/Projeto-Investimento-fixo-5-anos
+GitHub do Projeto: https://github.com/Cleitondev01/Projeto-Investimento-fixo-5-anos
 
-🌐 Portfólio:
-https://cleitonsilveira-portfolio.lovable.app/
+Portfólio: https://cleitonsilveira-portfolio.lovable.app/
